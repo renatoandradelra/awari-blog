@@ -8,7 +8,7 @@ const posts = [
         content: "Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018."
     },
     {
-        title: "Edge",
+        title: "Microsot Edge",
         content: "Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer."
     }
 ];
@@ -20,8 +20,10 @@ for (let i = 0; i < posts.length; i++){
     const post = posts[i];
 
     const article = document.createElement("article");
+    article.classList.add("post");
 
     const title = document.createElement("h1");
+    title.classList.add ("post-title");
     const titleText = document.createTextNode(post.title);
     title.appendChild(titleText);
     article.appendChild(title);
